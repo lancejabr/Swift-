@@ -10,6 +10,9 @@
 		751B74822218AD7900666481 /* Swift__.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 751B74782218AD7900666481 /* Swift__.framework */; };
 		751B74872218AD7900666481 /* Swift__Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751B74862218AD7900666481 /* Swift__Tests.swift */; };
 		751B74892218AD7900666481 /* Swift__.h in Headers */ = {isa = PBXBuildFile; fileRef = 751B747B2218AD7900666481 /* Swift__.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		751B749E2218AD9F00666481 /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751B749B2218AD9E00666481 /* Numbers.swift */; };
+		751B749F2218AD9F00666481 /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751B749C2218AD9E00666481 /* UI.swift */; };
+		751B74A02218AD9F00666481 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751B749D2218AD9E00666481 /* Units.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		751B74812218AD7900666481 /* Swift++Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift++Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		751B74862218AD7900666481 /* Swift__Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift__Tests.swift; sourceTree = "<group>"; };
 		751B74882218AD7900666481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		751B749B2218AD9E00666481 /* Numbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Numbers.swift; sourceTree = "<group>"; };
+		751B749C2218AD9E00666481 /* UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UI.swift; sourceTree = "<group>"; };
+		751B749D2218AD9E00666481 /* Units.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Units.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,9 @@
 		751B747A2218AD7900666481 /* Swift++ */ = {
 			isa = PBXGroup;
 			children = (
+				751B749C2218AD9E00666481 /* UI.swift */,
+				751B749D2218AD9E00666481 /* Units.swift */,
+				751B749B2218AD9E00666481 /* Numbers.swift */,
 				751B747B2218AD7900666481 /* Swift__.h */,
 				751B747C2218AD7900666481 /* Info.plist */,
 			);
@@ -194,6 +203,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				751B749E2218AD9F00666481 /* Numbers.swift in Sources */,
+				751B74A02218AD9F00666481 /* Units.swift in Sources */,
+				751B749F2218AD9F00666481 /* UI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +401,7 @@
 		751B74902218AD7900666481 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Swift++Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +419,7 @@
 		751B74912218AD7900666481 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Swift++Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
