@@ -12,15 +12,25 @@ public extension CGPoint {
     static func +(lhs: CGPoint, rhs: CGPoint) -> CGPoint {
         return CGPoint(x: lhs.x + rhs.x, y: lhs.y + rhs.y)
     }
+    
+    static func /(lhs: CGPoint, f: CGFloat) -> CGPoint {
+        return CGPoint(x: lhs.x / f, y: lhs.y / f)
+    }
+}
+
+public extension CGSize {
+    static func +(lhs: CGSize, rhs: CGSize) -> CGSize {
+        return CGSize(width: lhs.width + rhs.width, height: lhs.height + rhs.height)
+    }
+    
+    static func /(lhs: CGSize, f: CGFloat) -> CGSize {
+        return CGSize(width: lhs.width / f, height: lhs.height / f)
+    }
 }
 
 public extension CGRect {
-    mutating func rotate(by angle: Radians) {
-        self = self.rotated(by: angle)
-    }
-    
-    func rotated(by angle: Radians) -> CGRect {
-        return self.applying(CGAffineTransform(rotationAngle: CGFloat(angle)))
+    var center: CGPoint {
+        return CGPoint(x: midX, y: midY)
     }
 }
 
